@@ -1,9 +1,3 @@
-if _G.UILIBLOADED then
-	error("The script is already loaded! Press the exit button if you want to execute the script again.")
-end
-
-_G.UILIBLOADED = true
-
 -- Services
 
 local Players = game:GetService("Players")
@@ -366,7 +360,7 @@ function Library:new(options)
 					if GUI.Hover then
 						GUI["CloseButton"].BackgroundTransparency = 0.4
 						GUI["MainSGUI"]:Destroy()
-						_G.UILIBLOADED = false
+						getgenv().UILIBLOADED = false
 					else
 						GUI["CloseButton"].BackgroundTransparency = 1
 					end

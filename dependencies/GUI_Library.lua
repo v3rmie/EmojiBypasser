@@ -1,3 +1,9 @@
+if _G.UILIBLOADED then
+	error("The script is already loaded! Press the exit button if you want to execute the script again.")
+end
+
+_G.UILIBLOADED = true
+
 -- Services
 
 local Players = game:GetService("Players")

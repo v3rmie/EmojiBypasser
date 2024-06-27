@@ -360,7 +360,6 @@ function Library:new(options)
 					if GUI.Hover then
 						GUI["CloseButton"].BackgroundTransparency = 0.4
 						GUI["MainSGUI"]:Destroy()
-						getgenv().UILIBLOADED = false
 					else
 						GUI["CloseButton"].BackgroundTransparency = 1
 					end

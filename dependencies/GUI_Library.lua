@@ -151,6 +151,7 @@ function Library:new(options)
 		GUI["ContentList"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 		GUI["ContentList"].ScrollBarThickness = 16
 		GUI["ContentList"].BackgroundTransparency = 1
+		GUI["ContentList"].AutomaticSize = Enum.AutomaticSize.Y
 		GUI["ContentList"].Parent = GUI["ContentContainer"]
 		
 		GUI["ListPadding"] = Instance.new("UIPadding")
